@@ -20,5 +20,3 @@ if (alertTrigger) {
         alertLogado('Parabéns, você está logado!', 'success')
     })
 }
-
-console.log("teste");
