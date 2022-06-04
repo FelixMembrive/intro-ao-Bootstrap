@@ -1,0 +1,15 @@
+.btn {
+    font-size: .65rem;
+    font-weight: 700;
+}
+
+.list-group-item li {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+div .fw-bold {
+    font-size: 14px;
+}
