@@ -1,21 +1,23 @@
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
-const alert = (message, type) => {
+const alertLogado = (message, type) => {
     const wrapper = document.createElement('div')
     wrapper.innerHTML = [
-        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-        `   <div>${message}</div>`,
-        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-        '</div>'
+        `<div class="alert alert-${type} alert-dismissible" role="alert">
+        <div>${message}</div>
+        <a href="dashboard.html">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </a>
+        </div>`
     ].join('')
 
     alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
+const alertTrigger = document.getElementById('botaoEntrar')
 if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-        alert('Parabéns, você está logado!', 'success')
+        alertLogado('Parabéns, você está logado!', 'success')
     })
 }
 
